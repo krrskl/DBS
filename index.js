@@ -20,9 +20,9 @@ function buscarCapitulo(){
         $resultado = $m.indexOf("http", 0);
         $uEnv = $m.slice($resultado, $resultado + 95);
         $tEnv = r[0].title;
-    })
-    contador++;
-    setTimeout(crearCapitulo, 1000);
+        contador++;
+        setTimeout(crearCapitulo, 1000);
+    })    
 }
 
 function crearCapitulo(){
