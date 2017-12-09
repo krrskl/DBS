@@ -26,7 +26,7 @@ function buscarCapitulo(){
 }
 
 function crearCapitulo(){
-    axios.get('api.trucosdeactualidad.com/dbs/llenar.php?titulo=Ruben&url=google.com').then(function(res){
+    axios.get('http://api.trucosdeactualidad.com/dbs/llenar.php?titulo='+$tEnv+'&url='+$uEnv).then(function(res){
         console.log(res);
         setTimeout(buscarCapitulo, 1000);
     }).catch(function (error) {
